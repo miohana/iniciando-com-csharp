@@ -1,0 +1,34 @@
+﻿@model FormacaoTalentosFinal.Models.Curso
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Curso</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Universidade.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Universidade.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CursoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
